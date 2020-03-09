@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+#app {
+  width: 100vw;
+  margin-top: 10%;
+}
+
+#header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  color: #009879;
+}
+
+#header h1 {
+  padding: 10px;
+}
+
+#content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+#content-table th,
+#content-table td {
+  padding: 12px 15px;
+}
+
+#content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+#content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+#content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+#content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+#add_book {
+  border: 1px solid #dddddd;
+  margin: 10px;
+  padding: 10px;
+  color: #ffffff;
+  outline: none;
+  background-color: #009879;
+}
+
+#form {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: absolute;
+  top: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: transparent;
+  color: #009879;
+}
+
+#form form {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 300px;
+  height: 420px;
+  background-color: white;
+  border-radius: 5%;
+  border: 1px solid #009879;
+}
+
+#form form button {
+  margin-left: 40px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #dddddd;
+  background-color: #009879;
+  color: #ffffff;
+}
+
+#form form .fa-times {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+#form form div {
+  margin-left: 40px;
+}
+
+#form form div h2 {
+  text-decoration: underline;
+  color: #009879;
+}
+
+#form form div input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.remove {
+  border: none;
+  width: 24px;
+  height: 24px;
+  outline: none;
+  border-radius: 50%;
+  background-color: rgb(243, 40, 40);
+}
+
+.read {
+  border: none;
+  padding: 4px;
+}
